@@ -1,0 +1,165 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-geist-sans);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+/*
+  Design system — "signal on slate": a warm near-black slate with a single
+  molten-amber signal color, used the way a status light or terminal cursor
+  would be used: sparingly, and only where it means something (primary CTA,
+  active timeline node, focus ring, hover underline).
+*/
+
+:root {
+  --background: #faf9f6;
+  --foreground: #18160f;
+  --card: #ffffff;
+  --card-foreground: #18160f;
+  --popover: #ffffff;
+  --popover-foreground: #18160f;
+  --primary: #b9790f;
+  --primary-foreground: #fffcf7;
+  --secondary: #f0ede6;
+  --secondary-foreground: #18160f;
+  --muted: #f0ede6;
+  --muted-foreground: #6b655a;
+  --accent: #efe9de;
+  --accent-foreground: #18160f;
+  --destructive: #c0392b;
+  --border: #18160f14;
+  --input: #18160f1f;
+  --ring: #b9790f;
+  --chart-1: #b9790f;
+  --chart-2: #8a5c0c;
+  --chart-3: #d99a35;
+  --chart-4: #5c3d08;
+  --chart-5: #e8bd72;
+  --radius: 0.625rem;
+  --sidebar: var(--card);
+  --sidebar-foreground: var(--foreground);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
+  --sidebar-accent: var(--accent);
+  --sidebar-accent-foreground: var(--accent-foreground);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--ring);
+}
+
+.dark {
+  --background: #0c0b0a;
+  --foreground: #f2efea;
+  --card: #141210;
+  --card-foreground: #f2efea;
+  --popover: #141210;
+  --popover-foreground: #f2efea;
+  --primary: #e8a33d;
+  --primary-foreground: #17130d;
+  --secondary: #1b1917;
+  --secondary-foreground: #f2efea;
+  --muted: #17150f;
+  --muted-foreground: #9a948c;
+  --accent: #1e1b17;
+  --accent-foreground: #f2efea;
+  --destructive: #e5484d;
+  --border: #f2efea14;
+  --input: #f2efea1f;
+  --ring: #e8a33d;
+  --chart-1: #e8a33d;
+  --chart-2: #c9861e;
+  --chart-3: #f2c879;
+  --chart-4: #8b5e1f;
+  --chart-5: #614217;
+  --sidebar: var(--card);
+  --sidebar-foreground: var(--foreground);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
+  --sidebar-accent: var(--accent);
+  --sidebar-accent-foreground: var(--accent-foreground);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    @apply font-sans scroll-smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  ::selection {
+    background: color-mix(in oklch, var(--primary) 30%, transparent);
+    color: var(--foreground);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .font-tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
