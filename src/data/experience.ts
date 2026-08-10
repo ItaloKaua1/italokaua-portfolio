@@ -9,7 +9,7 @@ export const experiences: Experience[] = [
       "Plataforma SaaS voltada para campanhas de marketing destinadas ao mercado imobiliário.",
     highlights: [
       "Backend construído sobre Supabase (Edge Functions e políticas RLS no PostgreSQL) para os módulos internos da plataforma (CMS, métricas, treinamentos e notificações)",
-      "Desenvolvimento de interfaces e módulos administrativos utilizando React e Vue.js",
+      "Desenvolvimento de interfaces e módulos administrativos utilizando React e Node.js",
       "Implementação de CMS, Landing Pages, sistema de métricas, sistema de treinamentos e notificações",
       "Integração e adaptação da Google Ads API, YouTube Data API e outros serviços do Google Cloud ao contexto da plataforma",
       "Estrutura complementar em Python para acelerar a criação e subida de campanhas pelo painel administrativo",
@@ -19,7 +19,7 @@ export const experiences: Experience[] = [
     ],
     stack: [
       "React",
-      "Vue.js",
+      "Node.js",
       "TypeScript",
       "Python",
       "PostgreSQL",
