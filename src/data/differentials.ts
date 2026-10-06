@@ -4,43 +4,43 @@ export const differentials: Differential[] = [
   {
     title: "Construção de SaaS",
     description:
-      "Do modelo de dados ao billing: estruturo produtos SaaS pensando em multi-tenancy, permissões e crescimento desde o primeiro commit.",
+      "Atuação de ponta a ponta em plataforma SaaS: backend, frontend, banco de dados, integrações e infraestrutura no mesmo produto.",
     icon: "layers",
   },
   {
-    title: "Integrações Google Cloud",
+    title: "Arquitetura Backend & APIs",
     description:
-      "Serviços gerenciados, filas, storage e autenticação conectados de forma segura entre a aplicação e a nuvem.",
-    icon: "cloud-cog",
+      "Organização dos serviços, modelagem de dados e contratos de API claros — em Java/Spring Boot ou Supabase Edge Functions.",
+    icon: "network",
+  },
+  {
+    title: "Testes & Qualidade",
+    description:
+      "Mais de 90% de cobertura com JUnit e Mockito, auditada pelo SonarQube e integrada ao pipeline de CI.",
+    icon: "flask-conical",
+  },
+  {
+    title: "Integrações Externas",
+    description:
+      "Google Ads API, YouTube Data API e serviços do Google Cloud adaptados às regras de negócio da plataforma.",
+    icon: "plug",
   },
   {
     title: "CI/CD",
     description:
-      "Pipelines que testam, buildam e publicam sem depender de deploy manual — entrega contínua como parte do fluxo, não uma etapa à parte.",
+      "Ambientes conteinerizados com Docker e deploys automatizados com GitHub Actions e GitLab CI.",
     icon: "git-branch",
-  },
-  {
-    title: "Arquitetura Backend",
-    description:
-      "Decisões de arquitetura pensadas para o problema real: quando modularizar, quando manter simples e onde vale investir em escalabilidade.",
-    icon: "network",
-  },
-  {
-    title: "APIs REST",
-    description:
-      "Contratos claros, versionamento pensado e documentação que um time consegue consumir sem precisar me perguntar nada.",
-    icon: "plug",
   },
   {
     title: "Segurança",
     description:
-      "Autenticação, autorização e tratamento de dados sensíveis como parte do design — não como revisão de última hora.",
+      "OAuth, controle de acesso, auditoria e Row Level Security no PostgreSQL tratados como parte do design.",
     icon: "shield-check",
   },
   {
-    title: "RAG",
+    title: "RAG & LLMs",
     description:
-      "Aplicações de IA com contexto real: recuperação de informação combinada a modelos de linguagem para respostas úteis, não genéricas.",
+      "RAG híbrido combinando recuperação semântica e dados tabulares, com LLM local via Ollama e guardrails — avaliado em 88/100 em testes automatizados de acurácia.",
     icon: "brain-circuit",
   },
 ];

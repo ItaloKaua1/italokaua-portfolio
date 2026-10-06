@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import type { LucideIcon } from "lucide-react";
 import {
   BrainCircuit,
-  CloudCog,
+  FlaskConical,
   GitBranch,
   Layers,
   Network,
@@ -18,7 +18,7 @@ import { cn } from "@/lib/utils";
 
 const icons: Record<string, LucideIcon> = {
   layers: Layers,
-  "cloud-cog": CloudCog,
+  "flask-conical": FlaskConical,
   "git-branch": GitBranch,
   network: Network,
   plug: Plug,

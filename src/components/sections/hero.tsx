@@ -45,9 +45,10 @@ export function Hero() {
           </p>
 
           <p className="max-w-lg text-balance text-base text-muted-foreground sm:text-lg">
-            Construo sistemas backend robustos e produtos full stack de ponta a
-            ponta — da arquitetura de APIs à entrega em nuvem — com o mesmo
-            cuidado que um bom engenheiro dá para o que não aparece na tela.
+            Construo APIs, regras de negócio e produtos full stack de ponta a
+            ponta — de Java, Spring Boot e PostgreSQL a React, Docker e CI/CD —
+            com o mesmo cuidado que um bom engenheiro dá para o que não aparece
+            na tela.
           </p>
 
           <div className="mt-2 flex flex-wrap items-center gap-3">

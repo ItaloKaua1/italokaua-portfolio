@@ -2,11 +2,11 @@ import type { NavItem, SocialLink } from "@/types";
 
 export const siteConfig = {
   name: "Ítalo Kauã Vitor Fernandes",
-  role: "Backend & Full Stack Developer",
+  role: "Engenheiro de Software Backend & Full Stack",
   // TODO: confirm final domain before deploying
   url: "https://italokaua.dev",
   description:
-    "Backend & Full Stack Developer especializado em arquitetura de sistemas, SaaS, integrações em nuvem e IA aplicada a produtos reais.",
+    "Engenheiro de Software formado pela UFC, com experiência em desenvolvimento backend e full stack: Java, Spring Boot, APIs REST, PostgreSQL, React, TypeScript, Docker e CI/CD.",
 };
 
 export const navItems: NavItem[] = [

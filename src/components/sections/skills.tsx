@@ -3,12 +3,14 @@
 import { motion } from "framer-motion";
 import type { LucideIcon } from "lucide-react";
 import {
-  Cloud,
+  BrainCircuit,
   Database,
+  FlaskConical,
+  GitBranch,
   MonitorSmartphone,
   Server,
+  ShieldCheck,
   Workflow,
-  Wrench,
 } from "lucide-react";
 
 import { SectionHeading } from "@/components/shared/section-heading";
@@ -17,10 +19,12 @@ import { skillCategories } from "@/data/skills";
 const icons: Record<string, LucideIcon> = {
   backend: Server,
   frontend: MonitorSmartphone,
-  cloud: Cloud,
   databases: Database,
   devops: Workflow,
-  tools: Wrench,
+  quality: FlaskConical,
+  security: ShieldCheck,
+  ai: BrainCircuit,
+  practices: GitBranch,
 };
 
 export function Skills() {
@@ -32,7 +36,7 @@ export function Skills() {
         description="Organizadas por onde cada tecnologia realmente atua, não por uma grade solta de ícones."
       />
 
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {skillCategories.map((category, index) => {
           const Icon = icons[category.id] ?? Server;
           return (

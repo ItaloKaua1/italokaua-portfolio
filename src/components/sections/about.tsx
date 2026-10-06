@@ -4,7 +4,16 @@ import { motion } from "framer-motion";
 
 import { SectionHeading } from "@/components/shared/section-heading";
 
-const focusAreas = ["SaaS", "Cloud", "Integrações", "Arquitetura", "IA"];
+const focusAreas = [
+  "Java & Spring Boot",
+  "React & TypeScript",
+  "APIs REST",
+  "PostgreSQL",
+  "Docker & CI/CD",
+  "Testes & Qualidade",
+  "Segurança",
+  "RAG & LLMs",
+];
 
 export function About() {
   return (
@@ -29,15 +38,21 @@ export function About() {
             </span>{" "}
             e construí minha carreira desenvolvendo aplicações full stack — mas
             foi no backend que encontrei o que mais gosto de resolver: desenho
-            de APIs, modelagem de dados e a arquitetura que sustenta um produto
-            quando ele precisa crescer.
+            de APIs, regras de negócio, modelagem de dados e a arquitetura que
+            sustenta um produto quando ele precisa crescer.
           </p>
           <p>
-            No dia a dia, isso significa transitar entre construir features de
-            SaaS, integrar serviços em nuvem, desenhar arquiteturas que aguentam
-            escala e, mais recentemente, incorporar IA a produtos reais — sempre
-            com o mesmo critério: entender o problema antes de escrever a
-            primeira linha de código.
+            Na Boxys, atuei na evolução de uma plataforma SaaS, indo de APIs,
+            integrações com serviços como Google Ads API e YouTube Data API e
+            regras de acesso no PostgreSQL até interfaces em React, Docker e
+            deploy via CI/CD. No PET Saúde Digital, desenvolvi APIs em Java e
+            Spring Boot para sistemas de saúde, com foco em segurança, auditoria
+            e mais de 90% de cobertura de testes auditada pelo SonarQube.
+          </p>
+          <p>
+            No TCC, explorei IA aplicada: um assistente com RAG híbrido e LLM
+            local — sempre com o mesmo critério de entender o problema antes de
+            escrever a primeira linha de código.
           </p>
           <p>
             Gosto de times pequenos, decisões técnicas bem justificadas e do
@@ -57,10 +72,32 @@ export function About() {
             <p className="font-mono text-xs uppercase tracking-wide text-muted-foreground">
               Formação
             </p>
-            <p className="mt-2 text-foreground">Engenharia de Software</p>
-            <p className="text-sm text-muted-foreground">
-              Universidade Federal do Ceará (UFC)
+            <p className="mt-2 text-foreground">
+              Bacharelado em Engenharia de Software
             </p>
+            <p className="text-sm text-muted-foreground">
+              Universidade Federal do Ceará (UFC) · 2022 — 2026
+            </p>
+          </div>
+
+          <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
+            <div className="rounded-xl border border-border bg-card/50 p-6">
+              <p className="font-mono text-xs uppercase tracking-wide text-muted-foreground">
+                Certificação
+              </p>
+              <p className="mt-2 text-foreground">Cloud Foundations</p>
+              <p className="text-sm text-muted-foreground">AWS Academy · 20h</p>
+            </div>
+
+            <div className="rounded-xl border border-border bg-card/50 p-6">
+              <p className="font-mono text-xs uppercase tracking-wide text-muted-foreground">
+                Idiomas
+              </p>
+              <p className="mt-2 text-foreground">Português — nativo</p>
+              <p className="text-sm text-muted-foreground">
+                Inglês — intermediário
+              </p>
+            </div>
           </div>
 
           <div className="rounded-xl border border-border bg-card/50 p-6">

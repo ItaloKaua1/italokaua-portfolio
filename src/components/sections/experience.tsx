@@ -34,6 +34,7 @@ export function ExperienceSection() {
                 </h3>
                 <span className="font-mono text-xs text-muted-foreground">
                   {exp.period || "em atualização"}
+                  {exp.location && ` · ${exp.location}`}
                 </span>
               </div>
 
